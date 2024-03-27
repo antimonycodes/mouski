@@ -26,7 +26,7 @@ const Nav = () => {
           </ul>
         </nav>
       </div>
-      <div className=" absolute  z-50 w-[83%]">
+      <div className=" absolute top-[4.3rem] left-[2rem]  z-50 w-[90%]">
         {/* Menu */}
         {menuOpen && (
           <div className="">

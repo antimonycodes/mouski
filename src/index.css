@@ -3,6 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html,
+body {
+  height: 100%;
+  overflow-y: auto; /* This should not be 'hidden' */
+}
 
 .chewy-font {
   font-family: "Chewy", cursive;
@@ -40,6 +45,63 @@
 .arrow-animation {
   animation: arrow 2s infinite;
 }
+
+@keyframes disco {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(46, 218, 185, 0.2); /* Start with transparent shadow */
+  }
+  100% {
+    box-shadow: 10px 10px 20px 10px rgba(46, 218, 185, 0.5); /* End with #2EDAB9 shadow with larger spread radius */
+  }
+}
+
+.disco-animation {
+  animation: disco 2s infinite alternate;
+}
+
+.ant {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  animation: crawl 3s infinite linear;
+}
+
+@keyframes crawl {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-10px) translateX(10px);
+  }
+  50% {
+    transform: translateY(0) translateX(20px);
+  }
+  75% {
+    transform: translateY(10px) translateX(10px);
+  }
+}
+
+.moving-image {
+  width: 3rem; /* Adjust size as needed */
+  animation: moving-image-appear 1s ease-in-out;
+}
+/* MovingImage.css */
+
+@keyframes moving-image-appear {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+/* .moving-image {
+  animation: moving-image-appear 1s ease-in-out;
+} */
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

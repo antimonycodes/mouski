@@ -46,7 +46,9 @@ const Nav = ({ activeLink, setActiveLink, scrollToSection }) => {
             <ul className="items-center hidden gap-4 px-8 py-2 md:text-[1rem]  text-[0.6rem] font-bold transition duration-500 cursor-pointer md:flex chewy-font group-hover:text-green-500">
               <li
                 className={` hover:text-green-500 ${
-                  activeLink === "home" ? "active navbar-Link" : "navbar-link"
+                  activeLink === "home"
+                    ? "active-link text-green-500"
+                    : "navbar-link hover:text-green-500"
                 }`}
               >
                 <Link to="/">Home</Link>

@@ -91,7 +91,14 @@ const Nav = ({ activeLink, setActiveLink, scrollToSection }) => {
               >
                 Roadmap
               </li>
-              <li className="hover:text-green-500">
+              <li
+                className={`${
+                  activeLink === "raids"
+                    ? "active-link text-green-500"
+                    : "navbar-link hover:text-green-500"
+                }`}
+                onClick={() => handleItemClick("raids", "raids")}
+              >
                 <Link to="/raids">RAIDS</Link>
               </li>
             </ul>
@@ -187,7 +194,16 @@ const Nav = ({ activeLink, setActiveLink, scrollToSection }) => {
               >
                 Roadmap
               </li>
-              <li>RAIDS</li>
+              <li
+                className={`${
+                  activeLink === "raids"
+                    ? "active-link text-green-500"
+                    : "navbar-link hover:text-green-500"
+                }`}
+                onClick={() => handleItemClick("raids", "raids")}
+              >
+                <Link to="/raids">RAIDS</Link>
+              </li>
             </ul>
           </div>
         )}

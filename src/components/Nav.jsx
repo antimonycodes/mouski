@@ -51,7 +51,7 @@ const Nav = ({ activeLink, setActiveLink, scrollToSection }) => {
               >
                 <Link to="/">Home</Link>
               </li>
-              <li
+              {/* <li
                 className={`${
                   activeLink === "about"
                     ? "active-link text-green-500"
@@ -60,7 +60,7 @@ const Nav = ({ activeLink, setActiveLink, scrollToSection }) => {
                 onClick={() => handleItemClick("about", "about")}
               >
                 About
-              </li>
+              </li> */}
               <li
                 className={`${
                   activeLink === "whoismouski"
@@ -154,7 +154,7 @@ const Nav = ({ activeLink, setActiveLink, scrollToSection }) => {
               >
                 <Link to="/">Home</Link>
               </li>
-              <li
+              {/* <li
                 className={`pb-4 ${
                   activeLink === "about"
                     ? "active-link text-green-500"
@@ -163,7 +163,7 @@ const Nav = ({ activeLink, setActiveLink, scrollToSection }) => {
                 onClick={() => handleItemClick("about", "about")}
               >
                 About
-              </li>
+              </li> */}
               <li
                 className={`pb-4 ${
                   activeLink === "whoismouski"

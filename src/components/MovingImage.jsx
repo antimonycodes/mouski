@@ -2,50 +2,51 @@
 
 import { useEffect, useRef } from "react";
 
-// const MovingImage = () => {
-//   // Function to generate random position
-//   const getRandomPosition = () => {
-//     const x = Math.floor(Math.random() * window.innerWidth);
-//     const y = Math.floor(Math.random() * window.innerHeight);
-//     return { x, y };
-//   };
+const MovingImage = () => {
+  // Function to generate random position
+  const getRandomPosition = () => {
+    const x = Math.floor(Math.random() * window.innerWidth);
+    const y = Math.floor(Math.random() * window.innerHeight);
+    return { x, y };
+  };
 
-//   useEffect(() => {
-//     // Get the image element
-//     const image = document.getElementById("moving-image");
+  useEffect(() => {
+    // Get the image element
+    const image = document.getElementById("moving-image");
 
-//     // Move the image to a random position initially
-//     const initialPosition = getRandomPosition();
-//     image.style.left = `${initialPosition.x}px`;
-//     image.style.top = `${initialPosition.y}px`;
+    // Move the image to a random position initially
+    const initialPosition = getRandomPosition();
+    image.style.left = `${initialPosition.x}px`;
+    image.style.top = `${initialPosition.y}px`;
 
-//     // Function to move the image randomly
-//     const moveImage = () => {
-//       const newPosition = getRandomPosition();
-//       image.style.left = `${newPosition.x}px`;
-//       image.style.top = `${newPosition.y}px`;
-//     };
+    // Function to move the image randomly
+    const moveImage = () => {
+      const newPosition = getRandomPosition();
+      image.style.left = `${newPosition.x}px`;
+      image.style.top = `${newPosition.y}px`;
+    };
 
-//     // Move the image periodically
-//     const intervalId = setInterval(moveImage, 3000); // Change 3000 to adjust speed
+    // Move the image periodically
+    const intervalId = setInterval(moveImage, 3000); // Change 3000 to adjust speed
 
-//     // Clean up interval on component unmount
-//     return () => clearInterval(intervalId);
-//   }, []);
+    // Clean up interval on component unmount
+    // return () => clearInterval(intervalId);
+  }, []);
 
-//   return (
-//     <img
-//       id="moving-image"
-//       src="/push.png"
-//       alt=""
-//       className="moving-image"
-//       style={{ position: "absolute" }}
-//     />
-//   );
-// };
+  return (
+    <img
+      id="moving-image"
+      src="/push.png"
+      alt=""
+      className="moving-image"
+      style={{ position: "absolute" }}
+    />
+  );
+};
 
-// export default MovingImage;
-// import React, { useRef } from "react";
+export default MovingImage;
+
+// import React, { useEffect, useRef } from "react";
 // import PropTypes from "prop-types"; // Import PropTypes for props validation
 
 // const MovingImage = ({ x, y, speed }) => {

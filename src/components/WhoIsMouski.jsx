@@ -1,29 +1,29 @@
-// import Ants from "./Ants";
+import Ants from "./Ants";
 
-// import { useEffect, useRef } from "react";
-// import MovingImage from "./MovingImage";
+import { useEffect, useRef } from "react";
+import MovingImage from "./MovingImage";
 import Border from "./Border";
 
 const WhoIsMouski = () => {
-  // const movingImagesRef = useRef([]);
+  const movingImagesRef = useRef([]);
 
-  // // Function to initialize moving images
-  // const initializeMovingImages = () => {
-  //   movingImagesRef.current = Array.from({ length: 10 }).map(() => ({
-  //     x: Math.random() * window.innerWidth,
-  //     y: Math.random() * window.innerHeight,
-  //     speed: Math.random() * 5 + 1, // Random speed between 1 and 5
-  //   }));
-  // };
+  // Function to initialize moving images
+  const initializeMovingImages = () => {
+    movingImagesRef.current = Array.from({ length: 10 }).map(() => ({
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      speed: Math.random() * 5 + 1, // Random speed between 1 and 5
+    }));
+  };
 
-  // useEffect(() => {
-  //   initializeMovingImages(); // Initialize moving images on component mount
-  // }, []);
+  useEffect(() => {
+    initializeMovingImages(); // Initialize moving images on component mount
+  }, []);
 
   return (
     <>
       <div className=" w-full h-full bg-[#3CBDB4] px-4 py-8 grid grid-cols-1 lg:grid-cols-2 items-center md:px-8">
-        {/* <div>
+        <div>
           {[...Array(10)].map((_, index) => (
             <MovingImage key={index} />
           ))}
@@ -45,15 +45,15 @@ const WhoIsMouski = () => {
               }}
             />
           ))}
-        </div> */}
+        </div>
 
         <div className="w-full px-1 pt-1 pb-1 bg-black rounded-lg h-fit ">
           <div className="w-full p-4 bg-white rounded-lg h-fit ">
             <h1 className="text-6xl font-bold text-center chewy-font ">
-              WHO IS Mouski
+              What is Antman
             </h1>
             <p className="mt-3 font-bold text-center ">
-              Mouski, one of the deadliest mosquitoes in the world, is mainly
+              Antman, one of the deadliest mosquitoes in the world, is mainly
               found in the Amazon rainforest. Its mission is to conquer the meme
               world by biting and defeating all other meme coins, making them
               obsolete. It's Mouski's turn to soar to the moon, as trends like

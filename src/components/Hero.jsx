@@ -51,9 +51,9 @@ const Hero = () => {
         </div>
         {/*  */}
         <div className=" basis-[60%] flex flex-col justify-center items-center">
-          <div className="flex items-center justify-center ">
+          <div className="flex flex-col items-center justify-center ">
             <img src="/coin1.png" alt="" className=" w-[6rem] mb-4" />
-            <span className="text-5xl font-bold ">Mouski</span>
+            <span className="text-5xl font-bold ">ANTMAN</span>
           </div>
           <h5 className="text-center ">Contact address:</h5>
           <div className="mx-2 ">

@@ -30,7 +30,7 @@ const Hero = () => {
       >
         <div className="flex flex-col items-center gap-2 font-bold text-black ">
           <img src="/mousk.png" alt="" className=" hidden md:block w-[10rem]" />
-          <h3>We will Live on Pinksale inn</h3>
+          <h3>We will Live on Pinksale in</h3>
           <div className="flex gap-4 text-white ">
             <div className="p-1 bg-black w-fit">
               {days} {}{" "}

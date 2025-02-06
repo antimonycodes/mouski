@@ -41,7 +41,7 @@ const Roadmap = () => {
                   <li>Fairlaunch</li>
                   <li>Listing on raydium</li>
                   <li>CoinGecko Listings</li>
-                  <li>1000+ Holders</li>
+                  <li>1000+ Holders.</li>
                   <li>Turned out to be the greatest meme coin ever</li>
                 </ul>
               </div>
